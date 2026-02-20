@@ -7,5 +7,33 @@ git commit -m "mensaje cualquiera" //para guardar en la principal
  git branch -M main
  git push -u origin main
 
- //sdf
- 
+//Como colaborador hacer clon del proyecto compartido
+ git clone https://github.com/usuariocompartido/carpetatrabajo
+ git checkout -b feature-dparra //para una nueva rama
+// ahora se puede modificar el archivo copia en la nueva rama
+ git add //para adicionar todo lo que se hace
+ git commit -m "adiciona todo localmente con commits"
+//ir a la rama principal
+ git checkout main
+
+//estando en la rama principal y teniendo lista la rama copia, la quiero fusionar
+ git merge feature-dparra //nombre de rama que quiero fusionar (todavia local)
+
+//Asociar el remoto colaborador
+ git remote add origin https://urlremota
+
+//crear un pull request (creo rama en la nube)
+git push -u origin feature-dparra
+
+git add .
+git commit -m "con cambios"
+
+//fusionar cambios en las dos ramas
+ //ir a rama principal
+ git checkout main
+
+ git merge feature-dparra
+
+//empujar los cambios
+//ver si esta asociada
+git push -u origin main
