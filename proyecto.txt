@@ -1,1 +1,4 @@
-Esto es un archivo inicial.
+Esto es un archivo inicial.git add
+git init //para iniciar
+git add archivo.txt // para incluir en el stage
+git commit -m "mensaje cualquiera" //para guardar en la principal
