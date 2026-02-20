@@ -1,0 +1,10 @@
+Esto es un archivo inicial.git add
+git init //para iniciar
+git add archivo.txt // para incluir en el stage
+git commit -m "mensaje cualquiera" //para guardar en la principal
+//Asociar con proyecto de github en la nube
+ git remote add origin https://github.com/alen1238/clase1-ejercicio1-java-c6.git
+ git branch -M main
+ git push -u origin main
+
+ //
